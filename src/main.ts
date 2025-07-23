@@ -5,6 +5,7 @@ import { setupCounter } from './counter.ts';
 import { currencyUSFormat } from './formatCurrency.ts';
 import { currencyCAFormat } from './formatCurrency.ts';
 import { currencyBritainConverter } from './formatCurrency.ts';
+import { currencyEuroConverter } from './formatCurrency.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -24,6 +25,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <p>${currencyUSFormat(60000)}</p>
     <p>${currencyCAFormat(60000)}</p>
     <p>${currencyBritainConverter(60000)}</p>
+    <p>${currencyEuroConverter(240000)}</p>
   </div>
 `;
 
